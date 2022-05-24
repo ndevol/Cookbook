@@ -8,7 +8,7 @@
     </body>
     <script>
         $.ajax({
-            url : "recipes",
+            url : "recipes/",
             success: function (data) {
                 $(data).find("a").attr("href", function (i, val) {
                     if( val.match(/\.json$/) ) {
@@ -26,7 +26,6 @@
         // newDiv.className = 'ansbox';
         // toAdd.appendChild(newDiv);
         // }
-
         // document.appendChild(toAdd);
     </script>
 </html>
